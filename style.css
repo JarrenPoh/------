@@ -1,0 +1,92 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.card{
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 600px;
+    min-height: 600px;
+}
+
+.contact:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    text-align: center;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05),
+}
+
+[id^="number"] {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+[id^="circle"] {
+    fill: none;
+    stroke: red;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+    animation-play-state: paused; 
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f00;
+    transition: all 0.3s ease-in-out;
+  }
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: var(--offset);
+    }
+}

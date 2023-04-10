@@ -2,18 +2,29 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+#particles-js {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(27, 26, 26);
+
+}
+
+
 .navbar-collapse {
     justify-content: flex-end;
 }
 
-.card{
+.card {
     max-width: 500px;
     min-width: 500px;
     max-height: 600px;
     min-height: 600px;
 }
 
-.contact:hover{
+.contact:hover {
     transform: translateY(-10px);
     transition: all 0.3s ease;
 }
@@ -66,7 +77,7 @@ body {
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
     animation: anim 2s linear forwards;
-    animation-play-state: paused; 
+    animation-play-state: paused;
 }
 
 svg {
@@ -83,7 +94,7 @@ svg {
     height: 2px;
     background-color: #f00;
     transition: all 0.3s ease-in-out;
-  }
+}
 
 @keyframes anim {
     100% {
